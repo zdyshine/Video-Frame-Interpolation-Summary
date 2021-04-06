@@ -41,7 +41,7 @@ Video Frame Interpolation Summary 2020~2021
 9.EDSC( Multiple Video Frame Interpolation via Enhanced Deformable Separable Convolution)    
    paper:https://arxiv.org/pdf/2006.08070.pdf    
    github:https://github.com/Xianhang/EDSC-pytorch    
-    提出DSepConv[6]利用可变形可分卷积扩展基于核的方法，并进一步提出EDSC[5]执行多次插补。    
+    提出DSepConv[6]利用可变形可分卷积扩展基于核的方法，并进一步提出EDSC执行多次插补。    
 10.UTI-VFI(Video Frame Interpolation without Temporal Priors)    
    paper:https://github.com/yjzhang96/UTI-VFI/raw/master/paper/nips_camera_ready.pdf    
    github:https://github.com/yjzhang96/UTI-VFI    

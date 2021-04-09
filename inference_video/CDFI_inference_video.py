@@ -96,7 +96,7 @@ if torch.cuda.is_available():
 from models.cdfi_adacof import CDFI_adacof
 
 model = CDFI_adacof(kernel_size=11, dilation=2)
-checkpoint = torch.load('../checkpoints/CDFI_adacof.pth')
+checkpoint = torch.load('checkpoints/CDFI_adacof.pth')
 model.load_state_dict(checkpoint['state_dict'])
 model.eval()
 model.to(device)
@@ -139,7 +139,7 @@ else:
     if args.output is not None:
         vid_out_name = args.output
     else:
-        vid_out_name = '{}_{}X_{}fps_AdaCoF.{}'.format(video_path_wo_ext, (2 ** args.exp), int(np.round(args.fps)), args.ext)
+        vid_out_name = '{}_{}X_{}fps_CDFI.{}'.format(video_path_wo_ext, (2 ** args.exp), int(np.round(args.fps)), args.ext)
         print('========>', vid_out_name)
     vid_out = cv2.VideoWriter(vid_out_name, fourcc, args.fps, (w, h))
     

@@ -58,7 +58,7 @@ parser.add_argument('--video', dest='video', type=str, default=None)
 parser.add_argument('--output', dest='output', type=str, default=None)
 parser.add_argument('--img', dest='img', type=str, default=None)
 parser.add_argument('--montage', dest='montage', action='store_true', help='montage origin video')
-parser.add_argument('--model', dest='modelDir', type=str, default='train_log', help='directory with trained model files')
+parser.add_argument('--model', dest='modelDir', type=str, default='train_log/HDv2/', help='directory with trained model files')
 parser.add_argument('--fp16', dest='fp16', action='store_true', help='fp16 mode for faster and more lightweight inference on cards with Tensor Cores')
 parser.add_argument('--UHD', dest='UHD', action='store_true', help='support 4k video')
 parser.add_argument('--scale', dest='scale', type=float, default=1.0, help='Try scale=0.5 for 4k video')
@@ -134,7 +134,7 @@ else:
     if args.output is not None:
         vid_out_name = args.output
     else:
-        vid_out_name = '{}_{}X_{}fps.{}'.format(video_path_wo_ext, (2 ** args.exp), int(np.round(args.fps)), args.ext)
+        vid_out_name = '{}_{}X_{}fps_RIFE.{}'.format(video_path_wo_ext, (2 ** args.exp), int(np.round(args.fps)), args.ext)
         print('========>',vid_out_name)
     vid_out = cv2.VideoWriter(vid_out_name, fourcc, args.fps, (w, h))
     
@@ -227,10 +227,10 @@ while True:
             mid = (((mid[0] * 255.).byte().cpu().numpy().transpose(1, 2, 0)))
             write_buffer.put(np.concatenate((lastframe, mid[:h, :w]), 1))
     else:
-        write_buffer.put(lastframe) # 写前一帧
+        write_buffer.put(lastframe)
         for mid in output:
             mid = (((mid[0] * 255.).byte().cpu().numpy().transpose(1, 2, 0)))
-            write_buffer.put(mid[:h, :w]) # 写当前帧
+            write_buffer.put(mid[:h, :w])
     pbar.update(1)
     lastframe = frame
 if args.montage:

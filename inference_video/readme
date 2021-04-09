@@ -1,1 +1,4 @@
 
+# 训练命令
+python inference_video.py --exp=1 --video=input.mp4    
+exp=1是进行2倍插帧，exp=2是进行4倍插帧

@@ -95,7 +95,7 @@ if torch.cuda.is_available():
 #     print("Loaded v1.x HD model")
 from model import Net
 model = Net()
-state = torch.load('../pretrained_model/pretrained_model.pth.tar')
+state = torch.load('./pretrained_model/pretrained_model.pth.tar')
 model.load_state_dict(state, strict=True)
 
 model.eval()

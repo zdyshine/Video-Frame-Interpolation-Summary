@@ -95,7 +95,7 @@ if torch.cuda.is_available():
 #     print("Loaded v1.x HD model")
 from models.adacofnet import AdaCoFNet
 model = AdaCoFNet(kernel_size=5, dilation=1)
-# model = torch.nn.DataParallel(model).to(device)
+#model = torch.nn.DataParallel(model).to(device)
 checkpoint = torch.load('checkpoint/kernelsize_5/ckpt.pth', map_location=torch.device('cpu'))
 model.load_state_dict(checkpoint['state_dict'])
 model.eval()

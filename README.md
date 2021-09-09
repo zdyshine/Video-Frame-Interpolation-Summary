@@ -2,7 +2,7 @@
 Video Frame Interpolation Summary 2020~2021
 
 # 增加功能  
-1. 结果保存为无损yuv格式视频  
+1. 结果保存为无损yuv格式视频：inferencre_video_yuv.py    
 
 
 # 说明

@@ -2,7 +2,8 @@
 Video Frame Interpolation Summary 2020~2021
 
 # 增加功能  
-1. 结果保存为无损yuv格式视频：inferencre_video_yuv.py    
+1. 结果保存为无损yuv格式视频：inferencre_video_yuv.py  
+2. 增加分离声音和合成声音脚本（to do）    
 
 
 # 说明

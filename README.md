@@ -26,8 +26,7 @@ Video Frame Interpolation Summary 2020~2021
 | 7 | AdaCoF | 15280M | 77s |
 | 8 | CDFI | 14482M | 508s |
 | 9 | EDSC | 1257M | 97s |
-| 10 | BMBC | 19887 | 88min |
-![image](https://github.com/zdyshine/Video-Frame-Interpolation-Summary/blob/main/1080p_video.png)    
+| 10 | BMBC | 19887 | 88min |  
 
 # 源码
 1.DAIN (Depth-Aware Video Frame Interpolation)    

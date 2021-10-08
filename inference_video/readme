@@ -3,4 +3,5 @@
 python inference_video.py --exp=1 --video=input.mp4    
 exp=1是进行2倍插帧，exp=2是进行4倍插帧    
 # 说明：
-写视频使用的是opencv，保存的视频会有损，对画质要求高的，可以改一下代码，先保存YUV格式，在用ffmpeg进行转换。
+1.写视频使用的是opencv，保存的视频会有损，对画质要求高的，可以改一下代码，先保存YUV格式，在用ffmpeg进行转换。    
+2.目前只进行了2倍插帧测试，4倍插帧未使用过。

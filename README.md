@@ -26,7 +26,8 @@ Video Frame Interpolation Summary 2020~2021
 | 7 | AdaCoF | 15280M | 77s |
 | 8 | CDFI | 14482M | 508s |
 | 9 | EDSC | 1257M | 97s |
-| 10 | BMBC | 19887M | ~78min |  
+| 10 | BMBC | 19887M | ~78min |      
+       
 说明：BMBC在RTX3090上进行测试.
 # 源码
 1.DAIN (Depth-Aware Video Frame Interpolation)    

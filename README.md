@@ -28,7 +28,7 @@ Video Frame Interpolation Summary 2020~2021
 | 9 | EDSC | 1257M | 97s |
 | 10 | BMBC | 19887M | ~78min |      
        
-说明：BMBC在RTX3090上进行测试,在相同机器上验证后，BMBC的推理确实较慢.
+说明：BMBC在RTX3090上进行测试,且挑选了之前的一个算法在相同环境中进行了验证.
 # 源码
 1.DAIN (Depth-Aware Video Frame Interpolation)    
    paper:https://arxiv.org/pdf/1904.00830.pdf    

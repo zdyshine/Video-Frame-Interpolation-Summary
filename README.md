@@ -15,19 +15,19 @@ Video Frame Interpolation Summary 2020~2021
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    
 ![image](https://github.com/zdyshine/Video-Frame-Interpolation-Summary/blob/main/UCF101.png)    
 1080p的的视频片段，共625帧，推理时间为整个程序的运行时间。     
-| index | method | memory | time |
-| :----:| :---- | :----: | :----: |
-| 1 | DAIN | - | - |
-| 2 | EQVI | - | - |
-| 3 | RIFE | 6042M | 37s |
-| 4 | CAIN | 4126M | 73s |
-| 5 | FLAVR | 11638M | 2107s |
-| 6 | RRIN | 8832M | 166s |
-| 7 | AdaCoF | 15280M | 77s |
-| 8 | CDFI | 14482M | 508s |
-| 9 | EDSC | 1257M | 97s |
-| 10 | BMBC | 19887M | ~78min |      
-| 11 | AMBE | 16247M | ~900s |   
+| index | method | memory | time | machine |
+| :----:| :---- | :----: | :----: | :----: |
+| 1 | DAIN | - | - | - |
+| 2 | EQVI | - | - | - |
+| 3 | RIFE | 6042M | 37s | V100 |
+| 4 | CAIN | 4126M | 73s | V100 |
+| 5 | FLAVR | 11638M | 2107s | V100 |
+| 6 | RRIN | 8832M | 166s | V100 |
+| 7 | AdaCoF | 15280M | 77s | V100 |
+| 8 | CDFI | 14482M | 508s | V100 |
+| 9 | EDSC | 1257M | 97s | V100 |
+| 10 | BMBC | 19887M | ~78min | 3090 |      
+| 11 | AMBE | 16247M | ~900s | 3090 |      
     
 说明：BMBC/AMBE在RTX3090上进行测试,且挑选了之前的一个算法在相同环境中进行了验证.
 # 源码

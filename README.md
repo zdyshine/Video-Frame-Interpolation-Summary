@@ -1,6 +1,8 @@
 # Video-Frame-Interpolation-Summary
 Video Frame Interpolation Summary 2020~2021
-
+# 视频结果
+https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673      
+（仅用于论文的对比效果展示）    
 # 增加功能  
 1. 结果保存为无损yuv格式视频：inferencre_video_yuv.py  
 2. 增加分离声音和合成声音脚本（to do）    

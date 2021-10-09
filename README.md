@@ -28,8 +28,7 @@ Video Frame Interpolation Summary 2020~2021
 | 9 | EDSC | 1257M | 97s | V100 |
 | 10 | BMBC | 19887M | ~78min | 3090 |      
 | 11 | AMBE | 16247M | ~900s | 3090 |      
-    
-说明：BMBC/AMBE在RTX3090上进行测试,且挑选了之前的一个算法在相同环境中进行了验证.
+
 # 源码
 1.DAIN (Depth-Aware Video Frame Interpolation)    
    paper:https://arxiv.org/pdf/1904.00830.pdf    

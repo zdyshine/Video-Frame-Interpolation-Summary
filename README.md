@@ -13,7 +13,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 2.推理代码基于：https://github.com/hzwer/arXiv2020-RIFE 欢迎大家去源码star。    
 3.上面代码只给出了推理代码，model等文件，可去对应源码获取。    
 4.后续有机会会继续更新，如有误，可联系我进行修正。  
-# 性能
+# 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    
 ![image](https://github.com/zdyshine/Video-Frame-Interpolation-Summary/blob/main/UCF101.png)    
 1080p的的视频片段，共625帧，推理时间为整个程序的运行时间。     

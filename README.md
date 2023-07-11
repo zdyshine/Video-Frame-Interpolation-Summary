@@ -15,6 +15,19 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 4.后续有机会会继续更新，如有误，可联系我进行修正。  
 # 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    
+| index | method  | infer time | memory | PSNR | SSIM |
+| :----:| :---- | :----: | :----: | :----: |
+| 1 | DAIN(CVPR2019) | ~0.1736s | - | - | - |
+| 2 | EQVI(AIM2020) | ~0.669s | - | - | - |
+| 3 | RIFE(arXiv2020) | ~1.538s | 1348MiB | 35.243 | 0.96833 |
+| 4 | CAIN(AAAI2021) | ~0.1884s | 1996MiB | 34.9580 | 0.96794 |
+| 5 | FLAVR(CVPR2021) | ~0.0897s | 2594MiB | 34.970 | 0.96802 |
+| 6 | RRIN(ICASSP 2020) | ~0.2931s | 2656MiB | 32.6678 | 0.966584 |
+| 7 | AdaCoF(CVPR 2020) | ~0.2055s| 1948MiB | 35.165 | 0.96797 |
+| 8 | CDFI(CVPR2021) | 14482M | 3638MiB | 35.208 | 0.96739 |
+| 9 | EDSC(CVPR2021) | 1257M | 1832MiB | 35.168 | 0.96793 |
+
+
 ![image](https://github.com/zdyshine/Video-Frame-Interpolation-Summary/blob/main/UCF101.png)    
 1080p的的视频片段，共625帧，推理时间为整个程序的运行时间。     
 | index | method | memory | time | machine |

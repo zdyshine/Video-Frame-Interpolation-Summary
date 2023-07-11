@@ -16,7 +16,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 # 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    
 | index | method  | infer time | memory | PSNR | SSIM |
-| :----:| :---- | :----: | :----: | :----: |
+| :----:| :---- | :----: | :----: | :----: | :----: |
 | 1 | DAIN(CVPR2019) | ~0.1736s | - | - | - |
 | 2 | EQVI(AIM2020) | ~0.669s | - | - | - |
 | 3 | RIFE(arXiv2020) | ~1.538s | 1348MiB | 35.243 | 0.96833 |

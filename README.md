@@ -21,6 +21,8 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | :----:| :---- | :----: | :----: | :----: | :----: | :----: |
 | 1 | EMA-VFI(CVPR 2023) | - | - | 35.48 | 0.9701 | 混合CNN和Transformer架构 |
 | 2 | DQBC(IJCAI 2023) | - | - | 35.44 | 0.9700 | 基于CNN的SynthNet合成 |
+| 3 | AMT(CVPR 2023) | - | - | 35.45 | 0.9700 | 混合CNN和Transformer架构 |
+| 4 | VFIformer(CVPR 2022) | - | - | 35.43 | 0.9700 | 混合CNN和Transformer架构 |
 
 # 论文及源码 --- 2023年7月新统计
 ###  1. <a name='2023年7月更新'></a>Video-Frame-Interpolation
@@ -34,6 +36,16 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
   * paper：https://arxiv.org/pdf/2303.00440v2.pdf 
   * code：https://github.com/kinoud/DQBC
   * 简介：提出了密集查询双边相关性(DQBC),它消除了感受野依赖问题，因此更适合小而快速移动的对象。使用DQBC生成的运动场通过上下文特征进一步细化和上采样。在固定运动场之后，一个基于CNN的SynthNet合成最终插值帧。
+
+* AMT (CVPR 2023)：
+  * paper：https://arxiv.org/pdf/2304.09790.pdf 
+  * code：https://github.com/mcg-nku/amt
+  * 简介：提出了一种新的视频帧插值网络架构——All-Pairs Multi-Field Transforms (AMT)。该架构基于两个关键设计。首先，为所有像素对构建双向相关体积，并使用预测的双边流来检索相关性以更新流和插值内容特征。其次，从一组更新的粗粒流中推导出多个细粒度的流动场，以便分别对输入帧执行向后扭曲操作。
+
+ * VFIformer (CVPR 2022)：
+  * paper：https://arxiv.org/pdf/2205.07230.pdf 
+  * code：https://github.com/dvlab-research/VFIformer
+  * 简介：出了一种新颖的框架，该框架利用Transformer模型来建模视频帧之间的长距离像素相关性。此外，网络还配备了一种新的跨尺度窗口式注意力机制，其中跨尺度窗口相互作用。这种设计有效地扩大了感受野并聚合了多尺度信息。
 
 # 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    

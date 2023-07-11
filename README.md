@@ -14,6 +14,9 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 3.上面代码只给出了推理代码，model等文件，可去对应源码获取。    
 4.后续有机会会继续更新，如有误，可联系我进行修正。  
 
+# 参考网站
+1.https://paperswithcode.com/sota/video-frame-interpolation-on-ucf101-1。    
+2.https://paperswithcode.com/sota/video-frame-interpolation-on-vimeo90k。 
 
 # 性能（2倍插帧）--- 2023年7月新增
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。 
@@ -22,7 +25,9 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 1 | EMA-VFI(CVPR 2023) | - | - | 35.48 | 0.9701 | 混合CNN和Transformer架构 |
 | 2 | DQBC(IJCAI 2023) | - | - | 35.44 | 0.9700 | 基于CNN的SynthNet合成 |
 | 3 | AMT(CVPR 2023) | - | - | 35.45 | 0.9700 | 混合CNN和Transformer架构 |
-| 4 | VFIformer(CVPR 2022) | - | - | 35.43 | 0.9700 | 混合CNN和Transformer架构 |
+| 4 | VFIformer(CVPR 2022) | - | - | 35.43 | 0.9700 | Transformer架构 |
+| 5 | UPR-Net (CVPR 2023) | - | - | 35.47 | 0.9700 | 光流-轻量-指标高 |
+| 6 | BiFormer (CVPR 2023) | - | - | - | - | 双向Transformer-4K帧插 |
 
 # 论文及源码 --- 2023年7月新统计
 ###  1. <a name='2023年7月更新'></a>Video-Frame-Interpolation
@@ -42,10 +47,20 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
   * code：https://github.com/mcg-nku/amt
   * 简介：提出了一种新的视频帧插值网络架构——All-Pairs Multi-Field Transforms (AMT)。该架构基于两个关键设计。首先，为所有像素对构建双向相关体积，并使用预测的双边流来检索相关性以更新流和插值内容特征。其次，从一组更新的粗粒流中推导出多个细粒度的流动场，以便分别对输入帧执行向后扭曲操作。
 
- * VFIformer (CVPR 2022)：
+* VFIformer (CVPR 2022)：
   * paper：https://arxiv.org/pdf/2205.07230.pdf 
   * code：https://github.com/dvlab-research/VFIformer
   * 简介：出了一种新颖的框架，该框架利用Transformer模型来建模视频帧之间的长距离像素相关性。此外，网络还配备了一种新的跨尺度窗口式注意力机制，其中跨尺度窗口相互作用。这种设计有效地扩大了感受野并聚合了多尺度信息。
+    
+* UPR-Net (CVPR 2023)：
+  * paper：https://arxiv.org/pdf/2211.03456.pdf 
+  * code：https://github.com/srcn-ivl/upr-net
+  * 简介：提出了一种新颖的统一金字塔循环网络(UPR-Net),用于帧插值。在灵活的金字塔框架中，UPR-Net利用轻量级的循环模块进行双向流估计和中间帧合成。在每个金字塔层中，它利用估计的双向流生成前向变形表示以进行帧合成；在整个金字塔层次中，它使光流和中间帧的迭代细化成为可能。特别是，我们证明我们的迭代合成策略可以显著提高大运动情况下帧插值的鲁棒性。尽管我们的基础版本UPR-Net非常轻量级(仅1.7M参数),但它在各种基准测试上均取得了出色的性能。
+
+* BiFormer (CVPR 2023)：
+  * paper：https://arxiv.org/pdf/2304.02225.pdf 
+  * code：https://github.com/junheum/biformer
+  * 简介：提出了一种基于双向Transformer(BiFormer)的新颖4K视频帧插值器，它执行三个步骤：全局运动估计、局部运动细化和帧合成。首先，在全局运动估计中，预测对称双边运动场的粗尺度。为此，提出了第一个基于Transformer的双边运动估计器——BiFormer。其次，使用块级双边成本体积(BBCVs)高效地细化全局运动场。最后，使用细化的运动场对输入帧进行扭曲并将它们混合以合成中间帧
 
 # 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    

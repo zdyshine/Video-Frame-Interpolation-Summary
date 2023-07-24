@@ -20,16 +20,16 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 
 # 性能（2倍插帧）--- 2023年7月新增
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。 
-| index | method  | infer time | memory | PSNR | SSIM | Algorithm |
-| :----:| :---- | :----: | :----: | :----: | :----: | :----: |
-| 1 | EMA-VFI(CVPR 2023) | - | - | 35.48 | 0.9701 | 混合CNN和Transformer架构 |
-| 2 | DQBC(IJCAI 2023) | - | - | 35.44 | 0.9700 | 基于CNN的SynthNet合成 |
-| 3 | AMT(CVPR 2023) | - | - | 35.45 | 0.9700 | 混合CNN和Transformer架构 |
-| 4 | VFIformer(CVPR 2022) | - | - | 35.43 | 0.9700 | Transformer架构 |
-| 5 | UPR-Net (CVPR 2023) | - | - | 35.47 | 0.9700 | 光流-轻量-指标高 |
-| 6 | BiFormer (CVPR 2023) | - | - | - | - | 双向Transformer-4K帧插 |
-| 7 | IFRNet (CVPR 2022) | - | - | 35.42 | 0.9698 | conv-轻量 |
-| 8 | LDMVFI (arXiv 2023) | - | - | 32.186 | - | 扩散模型 |
+| index | method  | infer time | memory | PSNR | SSIM | Algorithm | Traindata |
+| :----:| :---- | :----: | :----: | :----: | :----: | :----: | :----: |
+| 1 | EMA-VFI(CVPR 2023) | - | - | 35.48 | 0.9701 | 混合CNN和Transformer架构 | Vimeo90K |
+| 2 | DQBC(IJCAI 2023) | - | - | 35.44 | 0.9700 | 基于CNN的SynthNet合成 | Vimeo90K |
+| 3 | AMT(CVPR 2023) | - | - | 35.45 | 0.9700 | 混合CNN和Transformer架构 | Vimeo90K |
+| 4 | VFIformer(CVPR 2022) | - | - | 35.43 | 0.9700 | Transformer架构 | Vimeo90K |
+| 5 | UPR-Net (CVPR 2023) | - | - | 35.47 | 0.9700 | 光流-轻量-指标高 | Vimeo90K(51312 triplets) |
+| 6 | BiFormer (CVPR 2023) | - | - | - | - | 双向Transformer-4K帧插 | X4K1000FPS |
+| 7 | IFRNet (CVPR 2022) | - | - | 35.42 | 0.9698 | conv-轻量 | Vimeo90K |
+| 8 | LDMVFI (arXiv 2023) | - | - | 32.186 | - | 扩散模型 | Vimeo90k(64612 frame)+BVI-DVC(17600 frame) |
 
 # 论文及源码 --- 2023年7月新统计
 ###  1. <a name='2023年7月更新'></a>Video-Frame-Interpolation
@@ -40,7 +40,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
   * 简介：提出了一个新的模块，通过统一操作明确地提取运动和外观信息。具体而言，重新思考了帧间注意力的信息处理过程，并将其注意力图用于外观特征增强和运动信息提取。此外，为了实现高效的VFI,提出的模块可以无缝地集成到混合CNN和Transformer架构中。这种混合流水线可以减轻帧间注意力的计算复杂性，同时保留详细的低级结构信息。
 
 * DQBC (IJCAI 2023)：
-  * paper：https://arxiv.org/pdf/2303.00440v2.pdf 
+  * paper：https://arxiv.org/pdf/2304.13596.pdf
   * code：https://github.com/kinoud/DQBC
   * 简介：提出了密集查询双边相关性(DQBC),它消除了感受野依赖问题，因此更适合小而快速移动的对象。使用DQBC生成的运动场通过上下文特征进一步细化和上采样。在固定运动场之后，一个基于CNN的SynthNet合成最终插值帧。
 

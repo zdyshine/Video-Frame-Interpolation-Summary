@@ -29,6 +29,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 5 | UPR-Net (CVPR 2023) | - | - | 35.47 | 0.9700 | 光流-轻量-指标高 |
 | 6 | BiFormer (CVPR 2023) | - | - | - | - | 双向Transformer-4K帧插 |
 | 7 | IFRNet (CVPR 2022) | - | - | 35.42 | 0.9698 | conv-轻量 |
+| 8 | LDMVFI (arXiv 2023) | - | - | 32.186 | - | 扩散模型 |
 
 # 论文及源码 --- 2023年7月新统计
 ###  1. <a name='2023年7月更新'></a>Video-Frame-Interpolation
@@ -67,7 +68,13 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
   * paper：https://openaccess.thecvf.com/content/CVPR2022/papers/Kong_IFRNet_Intermediate_Feature_Refine_Network_for_Efficient_Frame_Interpolation_CVPR_2022_paper.pdf
   * code：https://github.com/ltkong218/IFRNet
   * 简介：将分离的光流估计和上下文特征细化合并到一个单一的编码器-解码器基础的IFRNet中，以实现紧凑性和快速推理，使这两个关键元素能够相互受益。
-  * 
+
+* LDMVFI (Arxiv 2023)：
+  * paper：https://arxiv.org/pdf/2303.09508.pdf
+  * code：https://github.com/danier97/LDMVFI
+  * 简介：VFI问题表述为条件生成问题，从生成的角度来处理VFI问题。作为第一次使用潜在扩散模型解决VFI问题。
+
+
 # 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    
 | index | method  | infer time | memory | PSNR | SSIM |

@@ -1,1 +1,4 @@
 
+1.指定调用的模型    
+2.python runtime_demo.py --submission-id RRIN --model-name RRIN    
+3.默认使用1920x1080p作为输入     

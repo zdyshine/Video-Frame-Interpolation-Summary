@@ -2,3 +2,5 @@
 1.指定调用的模型    
 2.python runtime_demo.py --submission-id RRIN --model-name RRIN    
 3.默认使用1920x1080p作为输入     
+4.flops计算思路：    
+    模型为单个输入x，x为6通道图

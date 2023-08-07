@@ -31,6 +31,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 7 | IFRNet (CVPR 2022) | - | - | 35.42 | 0.9698 | conv-轻量 | Vimeo90K |
 | 8 | LDMVFI (arXiv 2023) | - | - | 32.186 | - | 扩散模型 | Vimeo90k(64612 frame)+BVI-DVC(17600 frame) |
 | 9 | MA-GCSPA (arXiv 2023) | - | - | 35.43 | - | conv | Vimeo90k |
+| 10 | VFI_Adapter (arXiv 2023) | - | - | - | - | 提高VFI性能 | Vimeo90k |
 
 Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation
 # 论文及源码 --- 2023年7月新统计
@@ -80,6 +81,11 @@ Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolat
   * paper：https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.pdf
   * code：https://github.com/redrock303/CVPR23-MA-GCSPA
   * 简介：提出放松对重建一个尽可能接近GT的中间帧的要求。基于假设，即插值内容应与给定帧中的对应部分保持相似的结构，开发了一种纹理一致性损失(TCL),设计了一个简单、高效且强大的指导跨尺度金字塔对齐(GCSPA)模块，其中充分利用了多尺度信息。
+
+* VFI_Adapter (Arxiv 2023)：
+  * paper：https://arxiv.org/pdf/2306.13933.pdf
+  * code：https://github.com/haoningwu3639/VFI_Adapter
+  * 简介：提出了一种新颖的基于优化的VFI方法，可以在测试时适应未知运动。该方法基于循环一致性自适应策略，利用视频帧之间的运动特性。还引入了一个轻量级的适配器，可以插入到现有预训练VFI模型的运动估计模块中，以提高适应的效率。
 
 
 # 性能（2倍插帧）

@@ -7,7 +7,6 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 1. 结果保存为无损yuv格式视频：inferencre_video_yuv.py  
 2. 增加分离声音和合成声音脚本（to do）    
 
-
 # 说明
 1.代码运行环境：阿里云 V100 16GB，主要考虑推理时间，性能指标及显存占用。    
 2.推理代码基于：https://github.com/hzwer/arXiv2020-RIFE 欢迎大家去源码star。    
@@ -33,7 +32,6 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 9 | MA-GCSPA (arXiv 2023) | - | - | 35.43 | - | conv | Vimeo90k |
 | 10 | VFI_Adapter (arXiv 2023) | - | - | - | - | 提高VFI性能 | Vimeo90k |
 
-Exploring Motion Ambiguity and Alignment for High-Quality Video Frame Interpolation
 # 论文及源码 --- 2023年7月新统计
 ###  1. <a name='2023年7月更新'></a>Video-Frame-Interpolation
 #### 1.1 

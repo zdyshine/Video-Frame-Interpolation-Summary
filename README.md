@@ -31,7 +31,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 8 | LDMVFI (arXiv 2023) | - | - | 32.186 | - | 扩散模型 | Vimeo90k(64612 frame)+BVI-DVC(17600 frame) |
 | 9 | MA-GCSPA (arXiv 2023) | - | - | 35.43 | - | conv | Vimeo90k |
 | 10 | VFI_Adapter (arXiv 2023) | - | - | - | - | 提高VFI性能 | Vimeo90k |
-| 11 | FILM (ECCV 2022) | - | - | - | - | 大场景运动 | Vimeo90k |
+| 11 | FILM (ECCV 2022) | - | - | 35.87 | 0.968 | 大场景运动 | Vimeo90k |
 
 # 论文及源码 --- 2023年7月新统计
 ###  1. <a name='2023年7月更新'></a>Video-Frame-Interpolation

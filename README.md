@@ -31,6 +31,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 8 | LDMVFI (arXiv 2023) | - | - | 32.186 | - | 扩散模型 | Vimeo90k(64612 frame)+BVI-DVC(17600 frame) |
 | 9 | MA-GCSPA (arXiv 2023) | - | - | 35.43 | - | conv | Vimeo90k |
 | 10 | VFI_Adapter (arXiv 2023) | - | - | - | - | 提高VFI性能 | Vimeo90k |
+| 11 | FILM (ECCV 2022) | - | - | - | - | 大场景运动 | Vimeo90k |
 
 # 论文及源码 --- 2023年7月新统计
 ###  1. <a name='2023年7月更新'></a>Video-Frame-Interpolation
@@ -84,6 +85,11 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
   * paper：https://arxiv.org/pdf/2306.13933.pdf
   * code：https://github.com/haoningwu3639/VFI_Adapter
   * 简介：提出了一种新颖的基于优化的VFI方法，可以在测试时适应未知运动。该方法基于循环一致性自适应策略，利用视频帧之间的运动特性。还引入了一个轻量级的适配器，可以插入到现有预训练VFI模型的运动估计模块中，以提高适应的效率。
+
+* FILM (ECCV 2022)：
+  * paper：https://arxiv.org/pdf/2202.04901.pdf
+  * code：https://github.com/google-research/frame-interpolation
+  * 简介：提出了一种帧插值算法，可以从具有较大场景运动的近重复照片中合成引人入胜的慢动作视频。
 
 
 # 性能（2倍插帧）

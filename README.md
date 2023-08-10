@@ -19,9 +19,9 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 
 # 性能（2倍插帧）--- 2023年7月新增
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。 
-| index | method  | infer time | memory | PSNR | SSIM | Algorithm | Traindata |
+| index | method  | paper | code | PSNR | SSIM | Algorithm | Traindata |
 | :----:| :---- | :----: | :----: | :----: | :----: | :----: | :----: |
-| 1 | EMA-VFI(CVPR 2023) | - | - | 35.48 | 0.9701 | 混合CNN和Transformer架构 | Vimeo90K |
+| 1 | EMA-VFI(CVPR 2023) | [paper](https://arxiv.org/pdf/2303.00440v2.pdf ) | - | 35.48 | 0.9701 | 混合CNN和Transformer架构 | Vimeo90K |
 | 2 | DQBC(IJCAI 2023) | - | - | 35.44 | 0.9700 | 基于CNN的SynthNet合成 | Vimeo90K |
 | 3 | AMT(CVPR 2023) | - | - | 35.45 | 0.9700 | 混合CNN和Transformer架构 | Vimeo90K |
 | 4 | VFIformer(CVPR 2022) | - | - | 35.43 | 0.9700 | Transformer架构 | Vimeo90K |

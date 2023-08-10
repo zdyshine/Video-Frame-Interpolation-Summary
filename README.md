@@ -29,7 +29,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 6 | BiFormer (CVPR 2023) |[paper](https://arxiv.org/pdf/2304.02225.pdf) | [code](https://github.com/junheum/biformer) | - | - | 双向Transformer-4K帧插 | X4K1000FPS |
 | 7 | IFRNet (CVPR 2022) | [paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Kong_IFRNet_Intermediate_Feature_Refine_Network_for_Efficient_Frame_Interpolation_CVPR_2022_paper.pdf) | [code](https://github.com/ltkong218/IFRNet) | 35.42 | 0.9698 | conv-轻量 | Vimeo90K |
 | 8 | LDMVFI (arXiv 2023) | [paper](https://arxiv.org/pdf/2303.09508.pdf) | [code](https://github.com/danier97/LDMVFI) | 32.186 | - | 扩散模型 | Vimeo90k(64612 frame)+BVI-DVC(17600 frame) |
-| 9 | MA-GCSPA (arXiv 2023) | [paper]([https://arxiv.org/pdf/2303.00440v2.pdf](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.pdf)) | [code](https://github.com/redrock303/CVPR23-MA-GCSPA) | 35.43 | - | conv | Vimeo90k |
+| 9 | MA-GCSPA (arXiv 2023) | [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.pdf) | [code](https://github.com/redrock303/CVPR23-MA-GCSPA) | 35.43 | - | conv | Vimeo90k |
 | 10 | VFI_Adapter (arXiv 2023) | [paper](https://arxiv.org/pdf/2306.13933.pdf) | [code](https://github.com/haoningwu3639/VFI_Adapter)| - | - | 提高VFI性能 | Vimeo90k |
 | 11 | FILM (ECCV 2022) | [paper](https://arxiv.org/pdf/2202.04901.pdf) | [code](https://github.com/google-research/frame-interpolation) | 35.87 | 0.968 | 大场景运动 | Vimeo90k |
 

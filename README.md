@@ -18,7 +18,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 2.https://paperswithcode.com/sota/video-frame-interpolation-on-vimeo90k。 
 
 # 性能（2倍插帧）--- 2023年7月新增
-数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。 
+数据集：Vimeo90K:
 | index | method  | paper | code | PSNR | SSIM | Algorithm | Traindata |
 | :----:| :---- | :----: | :----: | :----: | :----: | :----: | :----: |
 | 1 | EMA-VFI(CVPR 2023) | [paper](https://arxiv.org/pdf/2303.00440v2.pdf) | [code](https://github.com/mcg-nju/ema-vfi ) | 35.48 | 0.9701 | 混合CNN和Transformer架构 | Vimeo90K |
@@ -32,65 +32,6 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 9 | MA-GCSPA (arXiv 2023) | [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.pdf) | [code](https://github.com/redrock303/CVPR23-MA-GCSPA) | 35.43 | - | conv | Vimeo90k |
 | 10 | VFI_Adapter (arXiv 2023) | [paper](https://arxiv.org/pdf/2306.13933.pdf) | [code](https://github.com/haoningwu3639/VFI_Adapter)| - | - | 提高VFI性能 | Vimeo90k |
 | 11 | FILM (ECCV 2022) | [paper](https://arxiv.org/pdf/2202.04901.pdf) | [code](https://github.com/google-research/frame-interpolation) | 35.87 | 0.968 | 大场景运动 | Vimeo90k |
-
-# 论文及源码 --- 2023年7月新统计
-###  1. <a name='2023年7月更新'></a>Video-Frame-Interpolation
-#### 1.1 
-* EMA-VFI(CVPR 2023)：
-  * paper：https://arxiv.org/pdf/2303.00440v2.pdf  
-  * code：https://github.com/mcg-nju/ema-vfi  
-  * 简介：提出了一个新的模块，通过统一操作明确地提取运动和外观信息。具体而言，重新思考了帧间注意力的信息处理过程，并将其注意力图用于外观特征增强和运动信息提取。此外，为了实现高效的VFI,提出的模块可以无缝地集成到混合CNN和Transformer架构中。这种混合流水线可以减轻帧间注意力的计算复杂性，同时保留详细的低级结构信息。
-
-* DQBC (IJCAI 2023)：
-  * paper：https://arxiv.org/pdf/2304.13596.pdf
-  * code：https://github.com/kinoud/DQBC
-  * 简介：提出了密集查询双边相关性(DQBC),它消除了感受野依赖问题，因此更适合小而快速移动的对象。使用DQBC生成的运动场通过上下文特征进一步细化和上采样。在固定运动场之后，一个基于CNN的SynthNet合成最终插值帧。
-
-* AMT (CVPR 2023)：
-  * paper：https://arxiv.org/pdf/2304.09790.pdf 
-  * code：https://github.com/mcg-nku/amt
-  * 简介：提出了一种新的视频帧插值网络架构——All-Pairs Multi-Field Transforms (AMT)。该架构基于两个关键设计。首先，为所有像素对构建双向相关体积，并使用预测的双边流来检索相关性以更新流和插值内容特征。其次，从一组更新的粗粒流中推导出多个细粒度的流动场，以便分别对输入帧执行向后扭曲操作。
-
-* VFIformer (CVPR 2022)：
-  * paper：https://arxiv.org/pdf/2205.07230.pdf 
-  * code：https://github.com/dvlab-research/VFIformer
-  * 简介：出了一种新颖的框架，该框架利用Transformer模型来建模视频帧之间的长距离像素相关性。此外，网络还配备了一种新的跨尺度窗口式注意力机制，其中跨尺度窗口相互作用。这种设计有效地扩大了感受野并聚合了多尺度信息。
-    
-* UPR-Net (CVPR 2023)：
-  * paper：https://arxiv.org/pdf/2211.03456.pdf 
-  * code：https://github.com/srcn-ivl/upr-net
-  * 简介：提出了一种新颖的统一金字塔循环网络(UPR-Net),用于帧插值。在灵活的金字塔框架中，UPR-Net利用轻量级的循环模块进行双向流估计和中间帧合成。在每个金字塔层中，它利用估计的双向流生成前向变形表示以进行帧合成；在整个金字塔层次中，它使光流和中间帧的迭代细化成为可能。特别是，我们证明我们的迭代合成策略可以显著提高大运动情况下帧插值的鲁棒性。尽管我们的基础版本UPR-Net非常轻量级(仅1.7M参数),但它在各种基准测试上均取得了出色的性能。
-
-* BiFormer (CVPR 2023)：
-  * paper：https://arxiv.org/pdf/2304.02225.pdf 
-  * code：https://github.com/junheum/biformer
-  * 简介：提出了一种基于双向Transformer(BiFormer)的新颖4K视频帧插值器，它执行三个步骤：全局运动估计、局部运动细化和帧合成。首先，在全局运动估计中，预测对称双边运动场的粗尺度。为此，提出了第一个基于Transformer的双边运动估计器——BiFormer。其次，使用块级双边成本体积(BBCVs)高效地细化全局运动场。最后，使用细化的运动场对输入帧进行扭曲并将它们混合以合成中间帧
-
-* IFRNet (CVPR 2022)：
-  * paper：https://openaccess.thecvf.com/content/CVPR2022/papers/Kong_IFRNet_Intermediate_Feature_Refine_Network_for_Efficient_Frame_Interpolation_CVPR_2022_paper.pdf
-  * code：https://github.com/ltkong218/IFRNet
-  * 简介：将分离的光流估计和上下文特征细化合并到一个单一的编码器-解码器基础的IFRNet中，以实现紧凑性和快速推理，使这两个关键元素能够相互受益。
-
-* LDMVFI (Arxiv 2023)：
-  * paper：https://arxiv.org/pdf/2303.09508.pdf
-  * code：https://github.com/danier97/LDMVFI
-  * 简介：VFI问题表述为条件生成问题，从生成的角度来处理VFI问题。作为第一次使用潜在扩散模型解决VFI问题。
-
-* MA-GCSPA (CVPR 2023)：
-  * paper：https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.pdf
-  * code：https://github.com/redrock303/CVPR23-MA-GCSPA
-  * 简介：提出放松对重建一个尽可能接近GT的中间帧的要求。基于假设，即插值内容应与给定帧中的对应部分保持相似的结构，开发了一种纹理一致性损失(TCL),设计了一个简单、高效且强大的指导跨尺度金字塔对齐(GCSPA)模块，其中充分利用了多尺度信息。
-
-* VFI_Adapter (Arxiv 2023)：
-  * paper：https://arxiv.org/pdf/2306.13933.pdf
-  * code：https://github.com/haoningwu3639/VFI_Adapter
-  * 简介：提出了一种新颖的基于优化的VFI方法，可以在测试时适应未知运动。该方法基于循环一致性自适应策略，利用视频帧之间的运动特性。还引入了一个轻量级的适配器，可以插入到现有预训练VFI模型的运动估计模块中，以提高适应的效率。
-
-* FILM (ECCV 2022)：
-  * paper：https://arxiv.org/pdf/2202.04901.pdf
-  * code：https://github.com/google-research/frame-interpolation
-  * 简介：提出了一种帧插值算法，可以从具有较大场景运动的近重复照片中合成引人入胜的慢动作视频。
-
 
 # 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    

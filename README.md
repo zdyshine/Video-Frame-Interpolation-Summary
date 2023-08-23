@@ -32,6 +32,8 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 9 | MA-GCSPA (arXiv 2023) | [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Exploring_Motion_Ambiguity_and_Alignment_for_High-Quality_Video_Frame_Interpolation_CVPR_2023_paper.pdf) | [code](https://github.com/redrock303/CVPR23-MA-GCSPA) | 35.43 | - | conv | Vimeo90k |
 | 10 | VFI_Adapter (arXiv 2023) | [paper](https://arxiv.org/pdf/2306.13933.pdf) | [code](https://github.com/haoningwu3639/VFI_Adapter)| - | - | 提高VFI性能 | Vimeo90k |
 | 11 | FILM (ECCV 2022) | [paper](https://arxiv.org/pdf/2202.04901.pdf) | [code](https://github.com/google-research/frame-interpolation) | 35.87 | 0.968 | 大场景运动 | Vimeo90k |
+| 12 |  (CVPR2023) | [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.pdf) | None | 36.34 | 0.9814 | a novel transformer-based | Vimeo90k |
+| 13 | FILM (CVPR2023) | [paper](https://arxiv.org/pdf/2202.04901.pdf) | None | 36.33 | 0.975 | a novel frame renderer | Vimeo90k |
 
 # 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    

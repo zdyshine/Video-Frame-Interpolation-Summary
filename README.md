@@ -35,6 +35,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 | 12 |  (CVPR2023) | [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Plack_Frame_Interpolation_Transformer_and_Uncertainty_Guidance_CVPR_2023_paper.pdf) | None | 36.34 | 0.9814 | a novel transformer-based | Vimeo90k |
 | 13 |  (CVPR2023) | [paper](https://openaccess.thecvf.com/content/CVPR2023/html/Yu_Range-Nullspace_Video_Frame_Interpolation_With_Focalized_Motion_Estimation_CVPR_2023_paper.html) | None | 36.33 | 0.975 | a novel frame renderer | Vimeo90k |
 | 14 |  VFIFT (Arxiv 2023-07) | [paper](https://arxiv.org/pdf/2307.16144.pdf) | None | 36.43 | 0.9813 | Flow Transformer | Vimeo90k |
+| 145 |  WaveletVFI (IEEE TIP) | [paper](https://arxiv.org/pdf/2309.03508.pdf) | [code](https://github.com/ltkong218/WaveletVFI) | 35.58 | 0.978 | WaveletVFI | Vimeo90k |
 
 # 性能（2倍插帧）
 数据集：UCF101:  image size:256x256，image numbers: 379，主要考虑推理时间(ms)，性能指标及显存占用。    

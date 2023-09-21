@@ -19,7 +19,7 @@ https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673
 
 # 性能（2倍插帧）--- 2023年7月新增
 数据集：Vimeo90K:
-| index | method  | paper | code | PSNR | SSIM | Algorithm | Traindata | Traindata |
+| index | method  | paper | code | PSNR | SSIM | Algorithm | Traindata | Arbitrary |
 | :----:| :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | 1 | EMA-VFI(CVPR 2023) | [paper](https://arxiv.org/pdf/2303.00440v2.pdf) | [code](https://github.com/mcg-nju/ema-vfi ) | 35.48 | 0.9701 | 混合CNN和Transformer架构 | Vimeo90K | True |
 | 2 | DQBC(IJCAI 2023) | [paper](https://arxiv.org/pdf/2304.13596.pdf) | [code](https://github.com/kinoud/DQBC) | 35.44 | 0.9700 | 基于CNN的SynthNet合成 | Vimeo90K | False |

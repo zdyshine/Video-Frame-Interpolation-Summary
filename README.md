@@ -26,7 +26,7 @@ Video Frame Interpolation Summary 2020~2023
 | 14 |  VFIFT (Arxiv 2023-07) | [paper](https://arxiv.org/pdf/2307.16144.pdf) | None | 36.43 | 0.9813 | Flow Transformer | Vimeo90k | - |
 | 15 |  WaveletVFI (IEEE TIP) | [paper](https://arxiv.org/pdf/2309.03508.pdf) | [code](https://github.com/ltkong218/WaveletVFI) | 35.58 | 0.978 | WaveletVFI | Vimeo90k | - |
 | 16 |  InterpAny (arXiv 2023-11) | [paper](https://arxiv.org/pdf/2311.08007.pdf) | [code](https://github.com/zzh-tech/InterpAny-Clearer) | - | - | 新颖的任意插帧 | Vimeo90k | - |
-| 16 |  SAM-VFI (arXiv 2023-12) | [paper](https://arxiv.org/pdf/2312.15868.pdf) | None | - | - | SAM助力插帧 | Vimeo90k | - |
+| 17 |  SAM-VFI (arXiv 2023-12) | [paper](https://arxiv.org/pdf/2312.15868.pdf) | None | - | - | SAM助力插帧 | Vimeo90k | - |
 
 # 视频结果
 https://space.bilibili.com/350913028/channel/seriesdetail?sid=409673      

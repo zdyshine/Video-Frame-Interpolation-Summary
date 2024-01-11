@@ -2,6 +2,10 @@
 Video Frame Interpolation Summary 2024    
 [Summary2023](https://github.com/zdyshine/Video-Frame-Interpolation-Summary/blob/main/2023_before.md)
 
+#### update
+2024-01-11：新增结合ffmpeg的视频推理代码basic_infer    
+2024-01-11：新增结合推理演示视频 https://space.bilibili.com/350913028    
+
 # 参考网站
 1.https://paperswithcode.com/sota/video-frame-interpolation-on-ucf101-1     
 2.https://paperswithcode.com/sota/video-frame-interpolation-on-vimeo90k     

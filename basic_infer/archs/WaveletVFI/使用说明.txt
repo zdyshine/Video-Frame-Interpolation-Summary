@@ -1,0 +1,4 @@
+1.源码 && 下载模型：
+https://github.com/ltkong218/WaveletVFI
+2.安装 pytorch_wavelets
+cd archs/WaveletVFI/pytorch_wavelets && python setup.py install

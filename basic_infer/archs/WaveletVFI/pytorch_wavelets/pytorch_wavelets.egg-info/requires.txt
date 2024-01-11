@@ -1,0 +1,9 @@
+numpy
+six
+torch
+
+[docs]
+sphinx
+docutils
+matplotlib
+ipython

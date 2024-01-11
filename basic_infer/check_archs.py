@@ -24,9 +24,12 @@ padder = InputPadder(torch.rand(1,6,1080,1920).shape, divisor=32)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-from define_load_model import get_WaveletVFI
-model = get_WaveletVFI()
-model.eval()
+# from define_load_model import get_WaveletVFI
+# model = get_WaveletVFI()
+
+from define_load_model import get_AMT
+model = get_AMT()
+
 model.to(device)
 I0 = cv2.imread('images/0.png')
 I1 = cv2.imread('images/1.png')
@@ -34,7 +37,12 @@ I0 = (torch.tensor(I0.transpose(2, 0, 1)).to(device) / 255.).unsqueeze(0)
 I1 = (torch.tensor(I1.transpose(2, 0, 1)).to(device) / 255.).unsqueeze(0)
 I0, I1 = padder.pad(I0, I1)
 
-mid = model.inference(I0, I1)
+#WaveletVFI
+# mid = model.inference(I0, I1)
+
+# AMT
+embt = torch.tensor(1/2).float().view(1, 1, 1, 1).to(device)
+mid = model(I0, I1, embt, scale_factor=1.0, eval=True)
 
 mid = padder.unpad(mid)
 

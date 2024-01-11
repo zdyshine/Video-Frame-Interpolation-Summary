@@ -29,4 +29,5 @@ CUDA_VISIBLE_DEVICES=0 python inference_animesr_vfi.py -i ./casesc.mp4 -o ./resu
 [EMA-VFI](https://github.com/mcg-nju/ema-vfi)    
 [WaveletVFI](https://github.com/ltkong218/WaveletVFI)    
 [IFRNet](https://github.com/ltkong218/IFRNet)    
+[AMT](https://github.com/mcg-nku/amt)  显存占用：16781MiB      
 #### 感谢开源，侵权可删

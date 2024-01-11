@@ -53,9 +53,13 @@ def get_inference_model(args, device):
         from define_load_model import get_EMAVFI
         model = get_EMAVFI()
         model.device(device)
+    elif args.expname == 'AMT':
+        from define_load_model import get_AMT
+        model = get_AMT()
+        model.to(device)
     else:
         print('please define model by args.expname ...')
         exit()
     # model = model.to(device)
 
-    return model.half() if args.half else model
+    return model.half() if args.half else mod

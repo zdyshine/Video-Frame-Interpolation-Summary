@@ -60,3 +60,28 @@ def get_EMAVFI():
     model.load_model(model_path)
     model.eval()
     return model
+
+def get_AMT():
+    """return an on device model with eval mode"""
+    import importlib
+    from omegaconf import OmegaConf
+    def base_build_fn(module, cls, params):
+        return getattr(importlib.import_module(
+            module, package=None), cls)(**params)
+
+    def build_from_cfg(config):
+        module, cls = config['name'].rsplit(".", 1)
+        params = config.get('params', {})
+        return base_build_fn(module, cls, params)
+
+    cfg_path = './archs/amt/cfgs/AMT-S.yaml'
+    ckpt_path = './checkpoints/amt_ckpt/amt-s.pth'
+
+    network_cfg = OmegaConf.load(cfg_path).network
+    network_name = network_cfg.name
+    print(f'Loading [{network_name}] from [{ckpt_path}]...')
+    model = build_from_cfg(network_cfg)
+    ckpt = torch.load(ckpt_path)
+    model.load_state_dict(ckpt['state_dict'])
+    model.eval()
+    return model

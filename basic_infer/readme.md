@@ -16,6 +16,7 @@ ffmpeg_utils.py ffmpeg相关预定义
 inference_config.py 预配置文件    
 inference_ema_vfi.py EMA-VFI的推理代码
 inference_vfi.py 通用推理代码    
+checkpoints 放预训练模型文件    
 #### 已集成list:
 [EMA-VFI](https://github.com/mcg-nju/ema-vfi)    
 [WaveletVFI](https://github.com/ltkong218/WaveletVFI)    

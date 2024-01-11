@@ -20,5 +20,5 @@ checkpoints 放预训练模型文件
 #### 已集成list:
 [EMA-VFI](https://github.com/mcg-nju/ema-vfi)    
 [WaveletVFI](https://github.com/ltkong218/WaveletVFI)    
-[IFRNet](https://github.com/ltkong218/IFRNet)https://github.com/ltkong218/IFRNet    
+[IFRNet](https://github.com/ltkong218/IFRNet)    
 #### 感谢开源，侵权可删

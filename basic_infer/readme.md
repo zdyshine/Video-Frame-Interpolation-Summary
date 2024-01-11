@@ -6,7 +6,10 @@
 通用推理:   
 inference_vfi.py中 def make_inference(I0, I1, embt, exp) 不同，导致需要对特定函数进行额外定义  
 ~~~
-CUDA_VISIBLE_DEVICES=0 python inference_animesr_vfi.py -i ./casesc.mp4 -o ./results -n IFRNet -s 1 --expname IFRNet --num_process_per_gpu 1 --suffix 50fpsv1_half --half    
+CUDA_VISIBLE_DEVICES=0 python inference_animesr_vfi.py -i ./casesc.mp4 -o ./results -n VFI -s 1 --expname IFRNet --num_process_per_gpu 1 --suffix 50fpsv1_half --half
+一般需要指定:
+--expname IFRNet: 指定使用的模型
+--half 是否半精度
 ~~~
 #### 文件说明
 | index | Arbitrary |

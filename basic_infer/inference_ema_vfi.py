@@ -248,5 +248,5 @@ if __name__ == '__main__':
     main()
     '''
     视频插帧算法应用
-    CUDA_VISIBLE_DEVICES=0 python inference_ema_vfi.py -i /test/zhangdy/插帧测试视频/test_input/casesc.mp4 -o ./results -n IFRNet -s 1 --expname EMAVFI --num_process_per_gpu 1 --suffix 50fpsv1_half
+    CUDA_VISIBLE_DEVICES=0 python inference_ema_vfi.py -i ./casesc.mp4 -o ./results -n IFRNet -s 1 --expname EMAVFI --num_process_per_gpu 1 --suffix 50fpsv1_half
     '''

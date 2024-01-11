@@ -4,9 +4,10 @@
 
 #### 使用方式
 通用推理:   
-inference_vfi.py中 def make_inference(I0, I1, embt, exp) 不同，导致需要对特定函数进行额外定义          
+inference_vfi.py中 def make_inference(I0, I1, embt, exp) 不同，导致需要对特定函数进行额外定义  
+'''
 CUDA_VISIBLE_DEVICES=0 python inference_animesr_vfi.py -i ./casesc.mp4 -o ./results -n IFRNet -s 1 --expname IFRNet --num_process_per_gpu 1 --suffix 50fpsv1_half --half    
-     
+'''  
 #### 文件说明
 | index | Arbitrary |
 | :----:| :----: |

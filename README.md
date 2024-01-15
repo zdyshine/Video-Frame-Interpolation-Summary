@@ -4,7 +4,7 @@ Video Frame Interpolation Summary 2024
 
 #### update
 2024-01-11：新增结合ffmpeg的视频推理代码basic_infer    
-如有其他想测试视频，可以在issue中联系    
+如有其他想测试模型或视频，可以在issue中联系    
 2024-01-11：新增结合推理演示视频(1080P) https://space.bilibili.com/350913028    
 
 # 参考网站

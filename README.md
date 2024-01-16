@@ -10,7 +10,8 @@ Video Frame Interpolation Summary 2024
 # 参考网站
 1.https://paperswithcode.com/sota/video-frame-interpolation-on-ucf101-1     
 2.https://paperswithcode.com/sota/video-frame-interpolation-on-vimeo90k     
-3.https://github.com/AIVFI/Video-Frame-Interpolation-Rankings-and-Video-Deblurring-Rankings     
+3.https://paperswithcode.com/sota/video-frame-interpolation-on-x4k1000fps    
+4.https://github.com/AIVFI/Video-Frame-Interpolation-Rankings-and-Video-Deblurring-Rankings     
 
 # List
 数据集：Vimeo90K:

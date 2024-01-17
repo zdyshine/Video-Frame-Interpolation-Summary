@@ -18,5 +18,5 @@ for i in range(frame_length//50):
 #指定帧
 frame_index_list = [7, 62, 117, 172, 227, 275]
 frames = vr.get_batch(frame_index_list).asnumpy()
-# decord 指定帧块
+# decord 指定帧块,读取的是RGB
 # av 指定帧块

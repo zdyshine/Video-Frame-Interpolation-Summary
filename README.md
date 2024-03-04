@@ -17,7 +17,8 @@ Video Frame Interpolation Summary 2024
 数据集：Vimeo90K:
 | index | method  | paper | code | PSNR | SSIM | Algorithm | Traindata | Arbitrary |
 | :----:| :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| 1 | EMA-VFI(CVPR 2023) | [paper](https://arxiv.org/pdf/2303.00440v2.pdf) | [code](https://github.com/mcg-nju/ema-vfi ) | 35.48 | 0.9701 | 混合CNN和Transformer架构 | Vimeo90K | True |
+| 1 | MA-VFI(Arxiv 2402) | [paper](https://arxiv.org/pdf/2402.02892.pdf) | [code](-) | 35.96 | 0.980 | Motion-Aware  | Vimeo90K | True |
+
  
 # Dataset
 UCF101: Download UCF101 dataset    

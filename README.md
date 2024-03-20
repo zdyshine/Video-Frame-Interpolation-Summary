@@ -17,7 +17,7 @@ Video Frame Interpolation Summary 2024
 数据集：Vimeo90K:
 | index | method  | paper | code | PSNR | SSIM | Algorithm | Traindata | Arbitrary |
 | :----:| :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| 1 | MA-VFI(Arxiv 2402) | [paper](https://arxiv.org/pdf/2402.02892.pdf) | [code](-) | 35.96 | 0.980 | Motion-Aware  | Vimeo90K | True |
+| 1 | MA-VFI(Arxiv 2402) | [paper](https://arxiv.org/pdf/2402.02892.pdf) | - | 35.96 | 0.980 | Motion-Aware  | Vimeo90K | True |
 
  
 # Dataset

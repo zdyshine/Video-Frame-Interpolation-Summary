@@ -3,7 +3,7 @@ Video Frame Interpolation Summary 2024
 [Summary2023](https://github.com/zdyshine/Video-Frame-Interpolation-Summary/blob/main/2023_before.md)
 
 #### update
-2024-01-11：新增结合ffmpeg的视频推理代码basic_infer    
+2024-01-11：新增结合ffmpeg的视频推理代码[basic_infer](https://github.com/zdyshine/Video-Frame-Interpolation-Summary/tree/main/basic_infer)    
 如有其他想测试模型或视频，可以在issue中联系    
 2024-01-11：新增结合推理演示视频(1080P) https://space.bilibili.com/350913028    
 

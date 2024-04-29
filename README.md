@@ -20,7 +20,8 @@ Video Frame Interpolation Summary 2024
 | 1 | MA-VFI(Arxiv 2402) | [paper](https://arxiv.org/pdf/2402.02892.pdf) | [code](None) | 35.96 | 0.980 | Motion-Aware  | Vimeo90K | True |
 | 2 | VIDIM (Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.01203.pdf) | [code](https://vidim-interpolation.github.io/) | - | - | generate video  | mixture: WebVid + . | True |
 | 3 | LADDER(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.11108.pdf) | [code](None) | 36.65 | 0.981 | 光流,更高效  | Vimeo90K | False/结构可改 |
-| 4 | MADIFF(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.13534.pdf) | [code](None) | - | - |  a novel diffusion framework  | Vimeo90K |- |
+| 4 | SGM-VFI(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.06913.pdf) | [code](https://github.com/MCG-NJU/SGM-VFI) | - | - |  large motion | Vimeo90K/X4K1000FPS | False/结构可改 |
+| 5 | MADIFF(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.13534.pdf) | [code](None) | - | - |  a novel diffusion framework  | Vimeo90K |- |
 
  
 # Dataset

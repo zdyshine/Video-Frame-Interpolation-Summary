@@ -24,7 +24,7 @@ Video Frame Interpolation Summary 2024
 | 4 | SGM-VFI(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.06913.pdf) | [code](https://github.com/MCG-NJU/SGM-VFI) | - | - |  large motion | Vimeo90K/X4K1000FPS | False/结构可改 |
 | 5 | MADIFF(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.13534.pdf) | [code](None) | - | - |  a novel diffusion framework  | Vimeo90K |- |
 | 6 | PerVFI(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.06692.pdf) | [code](https://github.com/mulns/PerVFI) | - | - |  降低模糊和伪影  | Vimeo90K |- |
-| 7 | PerVFI(Arxiv 2405) | [paper](https://arxiv.org/pdf/2405.05953) | [code](https://github.com/ZonglinL/ConsecutiveBrownianBridge) | - | - |  Brownian Bridge  | Vimeo90K |True |
+| 7 | ConsecutiveBrownianBridge(Arxiv 2405) | [paper](https://arxiv.org/pdf/2405.05953) | [code](https://github.com/ZonglinL/ConsecutiveBrownianBridge) | - | - |  Brownian Bridge  | Vimeo90K |True |
 
  
 # Dataset

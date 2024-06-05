@@ -25,6 +25,8 @@ Video Frame Interpolation Summary 2024
 | 5 | MADIFF(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.13534.pdf) | [code](None) | - | - |  a novel diffusion framework  | Vimeo90K |- |
 | 6 | PerVFI(Arxiv 2404) | [paper](https://arxiv.org/pdf/2404.06692.pdf) | [code](https://github.com/mulns/PerVFI) | - | - |  降低模糊和伪影  | Vimeo90K |- |
 | 7 | ConsecutiveBrownianBridge(Arxiv 2405) | [paper](https://arxiv.org/pdf/2405.05953) | [code](https://github.com/ZonglinL/ConsecutiveBrownianBridge) | - | - |  Brownian Bridge  | Vimeo90K |True |
+| 8 | ToonCrafter(Arxiv 2405) | [paper](https://arxiv.org/abs/2405.17933) | [code](https://github.com/ToonCrafter/ToonCrafter) | - | - |  动漫插帧  | - |True |
+| 9 | ZeroSmooth(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.00908) | [code](https://github.com/ssyang2020/ZeroSmooth) | - | - |  Training-free Diffuser  | - |True |
 
  
 # Dataset

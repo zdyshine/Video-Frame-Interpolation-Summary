@@ -27,6 +27,8 @@ Video Frame Interpolation Summary 2024
 | 7 | ConsecutiveBrownianBridge(Arxiv 2405) | [paper](https://arxiv.org/pdf/2405.05953) | [code](https://github.com/ZonglinL/ConsecutiveBrownianBridge) | - | - |  Brownian Bridge  | Vimeo90K |True |
 | 8 | ToonCrafter(Arxiv 2405) | [paper](https://arxiv.org/abs/2405.17933) | [code](https://github.com/ToonCrafter/ToonCrafter) | - | - |  动漫插帧  | - |True |
 | 9 | ZeroSmooth(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.00908) | [code](https://github.com/ssyang2020/ZeroSmooth) | - | - |  Training-free Diffuser  | - |True |
+| 10 | Swin-VFI(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.11371) | [code](None) | 38.04 | 0.981 |  Swin-Transverter的多阶段多尺度网络  | Vimeo90K | False |
+| 11 | LAVIB(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.09754) | [code](https://github.com/alexandrosstergiou/LAVIB) | - | - |  提出一个新的数据集  | - | - |
 
  
 # Dataset

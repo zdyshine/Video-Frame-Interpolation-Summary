@@ -29,6 +29,9 @@ Video Frame Interpolation Summary 2024
 | 9 | ZeroSmooth(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.00908) | [code](https://github.com/ssyang2020/ZeroSmooth) | - | - |  Training-free Diffuser  | - |True |
 | 10 | Swin-VFI(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.11371) | [code](None) | 38.04 | 0.981 |  Swin-Transverter的多阶段多尺度网络  | Vimeo90K | False |
 | 11 | LAVIB(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.09754) | [code](https://github.com/alexandrosstergiou/LAVIB) | - | - |  提出一个新的数据集  | - | - |
+| 12 | MoMo(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.17256) | [code](https://github.com/JHLew/MoMo) | - | - |  解脱运动建模MoMo一种基于扩散的VFI方法  | Vimeo90K | - |
+| 13 | VFI-SwinT(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.11371) | [code](None) | - | - |  基于Swin-Transformer  | Vimeo90K | - |
+| 14 | VFIMamba(Arxiv 2407) | [paper](https://arxiv.org/pdf/2407.02315) | [code](https://github.com/MCG-NJU/VFIMamba) | 36.64 | 0.9819 |  基于Mamba  | Vimeo90K | - |
 
  
 # Dataset

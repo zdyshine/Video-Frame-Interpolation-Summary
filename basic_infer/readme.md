@@ -11,6 +11,12 @@ CUDA_VISIBLE_DEVICES=0 python inference_animesr_vfi.py -i ./casesc.mp4 -o ./resu
 --expname IFRNet: 指定使用的模型
 --half 是否半精度
 ~~~
+
+SGMVFI推理：
+~~~
+CUDA_VISIBLE_DEVICES=0 python inference_sgm_vfi.py -i ./casesc.mp4 -o ./results -s 1 --expname SGMVFI --num_process_per_gpu 1 --suffix 50fpsv1
+~~~
+
 #### 文件说明
 | index | Arbitrary |
 | :----:| :----: |
@@ -26,6 +32,7 @@ CUDA_VISIBLE_DEVICES=0 python inference_animesr_vfi.py -i ./casesc.mp4 -o ./resu
 | checkpoints | 放预训练模型文件 |      
   
 #### 已集成list:
+[SGM-VFI](https://github.com/MCG-NJU/SGM-VFI)    
 [EMA-VFI](https://github.com/mcg-nju/ema-vfi)    
 [WaveletVFI](https://github.com/ltkong218/WaveletVFI)    
 [IFRNet](https://github.com/ltkong218/IFRNet)    

@@ -85,3 +85,10 @@ def get_AMT():
     model.load_state_dict(ckpt['state_dict'])
     model.eval()
     return model
+
+def get_SGMVFI():
+    from archs.sgmvfi.Trainer_x4k import Model
+    model = Model(-1)
+    model.load_model("ours-1-2-points")
+    model.eval()
+    return model

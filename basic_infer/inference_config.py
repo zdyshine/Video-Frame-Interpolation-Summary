@@ -57,9 +57,16 @@ def get_inference_model(args, device):
         from define_load_model import get_AMT
         model = get_AMT()
         model.to(device)
+    elif args.expname == "SGMVFI":
+        from define_load_model import get_SGMVFI
+        model = get_SGMVFI()
+        model.to(device)
     else:
         print('please define model by args.expname ...')
         exit()
     # model = model.to(device)
 
-    return model.half() if args.half else mod
+    if hasattr(model, "half"):
+        return model.half() if args.half else model
+    else:
+        return model

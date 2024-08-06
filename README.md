@@ -32,6 +32,8 @@ Video Frame Interpolation Summary 2024
 | 12 | MoMo(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.17256) | [code](https://github.com/JHLew/MoMo) | - | - |  解脱运动建模MoMo一种基于扩散的VFI方法  | Vimeo90K | - |
 | 13 | VFI-SwinT(Arxiv 2406) | [paper](https://arxiv.org/pdf/2406.11371) | [code](None) | - | - |  基于Swin-Transformer  | Vimeo90K | - |
 | 14 | VFIMamba(Arxiv 2407) | [paper](https://arxiv.org/pdf/2407.02315) | [code](https://github.com/MCG-NJU/VFIMamba) | 36.64 | 0.9819 |  基于Mamba  | Vimeo90K | - |
+| 15 | GIMM-VFI(Arxiv 2407) | [paper](https://arxiv.org/pdf/2407.08680) | [code](https://github.com/GSeanCDAT/GIMM-VFI) | - | - |  可泛化隐式运动建模（GIMM）  | Vimeo90K | True |
+| 16 | 360VFI(Arxiv 2407) | [paper](https://arxiv.org/pdf/2407.14066) | [code](None) | - | - |  全景图插帧  | 新数据集360VFI | - |
 
  
 # Dataset

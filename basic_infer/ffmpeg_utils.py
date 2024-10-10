@@ -211,3 +211,15 @@ class Writer:
     def close(self):
         self.stream_writer.stdin.close()
         self.stream_writer.wait()
+'''
+# crop video filter
+writer = (ffmpeg
+            .input('pipe:', format='rawvideo', pix_fmt='bgr24', s='{}x{}'.format(int(scenes['W']), int(scenes['H'])), r=fps)
+            .filter('crop', w, h,  x0, y0)
+            # .output(save_cropped_face_path, vcodec='libx264', pix_fmt='yuv444p', video_bitrate='10M', r=fps, **{'strict': 2, 'qscale': 0})
+            .output(save_cropped_face_path, vcodec='libx264', pix_fmt='yuv444p', r=fps, **{'strict': 2, 'qscale': 0, 'crf': 10})
+            .global_args('-hide_banner').global_args('-loglevel', 'quiet')
+            .overwrite_output()
+            .run_async(pipe_stdin=True, cmd=ffmpeg_bin))
+                        
+'''

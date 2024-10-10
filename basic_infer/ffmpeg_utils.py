@@ -221,5 +221,7 @@ writer = (ffmpeg
             .global_args('-hide_banner').global_args('-loglevel', 'quiet')
             .overwrite_output()
             .run_async(pipe_stdin=True, cmd=ffmpeg_bin))
-writer.stdin.write(np.ascontiguousarray(frame).tobytes())      
+writer.stdin.write(np.ascontiguousarray(frame).tobytes())   
+writer.stdin.close()
+writer.wait()
 '''

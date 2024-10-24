@@ -88,7 +88,7 @@ def inference_video(args, video_save_path, device=None, total_workers=1, worker_
                 lastframe = tensor2img(prev, rgb2bgr=False)
                 frame = tensor2img(nxt, rgb2bgr=False)
                 out.append(torch.from_numpy(np.transpose(
-                    (cv2.addWeighted(frame, alpha, lastframe, beta, 0)[:, :, ::-1].copy()),
+                    (cv2.addWeighted(frame, alpha, lastframe, beta, 0).copy()),
                     (2, 0, 1))).to(device, non_blocking=True).unsqueeze(0).float() / 255.)
         else:
             if args.large4k:

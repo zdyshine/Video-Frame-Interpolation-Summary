@@ -34,6 +34,9 @@ Video Frame Interpolation Summary 2024
 | 14 | VFIMamba(Arxiv 2407) | [paper](https://arxiv.org/pdf/2407.02315) | [code](https://github.com/MCG-NJU/VFIMamba) | 36.64 | 0.9819 |  基于Mamba  | Vimeo90K | - |
 | 15 | GIMM-VFI(Arxiv 2407) | [paper](https://arxiv.org/pdf/2407.08680) | [code](https://github.com/GSeanCDAT/GIMM-VFI) | - | - |  可泛化隐式运动建模（GIMM）  | Vimeo90K | True |
 | 16 | 360VFI(Arxiv 2407) | [paper](https://arxiv.org/pdf/2407.14066) | [code](None) | - | - |  全景图插帧  | 新数据集360VFI | - |
+| 17 | ViBiDSampler(Arxiv 2410) | [paper](https://arxiv.org/pdf/2410.05651) | [code](None) | - | - |  首尾帧扩散插帧  | Pexels dataset | - |
+| 18 | HIFI(Arxiv 2410) | [paper](https://arxiv.org/pdf/2410.11838) | [code](https://hifi-diffusion.github.io/) | - | - |  高分辨(8K)率,扩散，插帧  |  30 M videos with 40 frames dataset | - |
+| 17 | Framer(Arxiv 2410) | [paper](https://arxiv.org/pdf/2410.18978) | [code](https://aim-uofa.github.io/Framer/) | - | - |  交互式帧插值  | OpenVidHD-0.4M datas | - |
 
  
 # Dataset

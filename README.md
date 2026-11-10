@@ -36,8 +36,7 @@ Video Frame Interpolation Summary (2024-2026)
 | 16 | 360VFI(Arxiv 2407) | [paper](https://arxiv.org/pdf/2407.14066) | [code](None) | - | - |  全景图插帧  | 新数据集360VFI | - |
 | 17 | ViBiDSampler(Arxiv 2410) | [paper](https://arxiv.org/pdf/2410.05651) | [code](None) | - | - |  首尾帧扩散插帧  | Pexels dataset | - |
 | 18 | HIFI(Arxiv 2410) | [paper](https://arxiv.org/pdf/2410.11838) | [code](https://hifi-diffusion.github.io/) | - | - |  高分辨(8K)率,扩散，插帧  |  30 M videos with 40 frames dataset | - |
-| 17 | Framer(Arxiv 2410) | [paper](https://arxiv.org/pdf/2410.18978) | [code](https://aim-uofa.github.io/Framer/) | - | - |  交互式帧插值  | OpenVidHD-0.4M datas | - |
-
+| 19 | Framer(Arxiv 2410) | [paper](https://arxiv.org/pdf/2410.18978) | [code](https://aim-uofa.github.io/Framer/) | - | - |  交互式帧插值  | OpenVidHD-0.4M datas | - |
 | 20 | MoG (SCIS 2026; arXiv 2501) | [paper](https://link.springer.com/article/10.1007/s11432-025-4920-3) / [arXiv](https://arxiv.org/abs/2501.03699) | [code](https://github.com/MCG-NJU/MoG-VFI) | - | - | Flow-guided generative video diffusion | Internal real/animation clips | - |
 
  
